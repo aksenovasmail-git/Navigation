@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.Cookbook" parent="Base.Theme.Cookbook" />
+
+    <style name="Material3_MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">#6750A4</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Material3.MediumComponent</item>
+    </style>
 </resources>

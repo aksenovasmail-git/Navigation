@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/cookbookFragment"> <fragment
+    android:id="@+id/cookbookFragment"
+    android:name="ru.otus.cookbook.ui.CookbookFragment"
+    tools:layout="@layout/fragment_cookbook"> <action
+    android:id="@+id/action_cookbookFragment_to_recipeFragment"
+    app:destination="@id/recipeFragment"
+    app:enterAnim="@anim/slide_in_right"
+    app:exitAnim="@anim/slide_out_left"
+    app:popEnterAnim="@anim/slide_in_left"
+    app:popExitAnim="@anim/slide_out_right" />
+</fragment>
+
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="ru.otus.cookbook.ui.RecipeFragment"
+        android:label="Recipe Details"
+        tools:layout="@layout/fragment_recipe">
+
+        <argument
+            android:name="recipeId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_recipeFragment_to_deleteRecipeDialogFragment"
+            app:destination="@id/deleteRecipeDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/deleteRecipeDialogFragment"
+        android:name="ru.otus.cookbook.ui.DeleteRecipeDialogFragment">
+        <argument
+            android:name="recipeTitle"
+            app:argType="string" />
+    </dialog>
+
+</navigation>

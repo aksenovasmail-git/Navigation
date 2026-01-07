@@ -50,4 +50,5 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     testImplementation(libs.kotlin.coroutines.test)
+    implementation("io.coil-kt:coil:2.4.0")
 }

@@ -4,8 +4,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="home_fragment">This is my home: %s</string>
-    <string name="notifications_fragment">This is notifications Fragment</string>
-    <string name="dashboard_fragment">This is dashboard Fragment</string>
     <string name="hint_login">Login</string>
     <string name="hint_password">Password</string>
     <string name="btn_login">Login</string>

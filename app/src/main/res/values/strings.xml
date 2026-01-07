@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cookbook</string>
+    <string name="Delete">Удалить</string>
 </resources>

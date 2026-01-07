@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.3"
+coil = "2.7.0"
 kotlin = "2.1.0"
 coreKtx = "1.15.0"
 fragmentKtx = "1.8.5"
@@ -18,6 +19,7 @@ datastore = "1.1.1"
 
 
 [libraries]
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
